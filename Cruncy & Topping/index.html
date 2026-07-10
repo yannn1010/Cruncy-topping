@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cruncy & Topping - Pisang Crispy dengan berbagai topping favorit yang lezat, fresh setiap hari, dan harga terjangkau. Pesan sekarang!">
+    <title>Cruncy & Topping - Pisang Crispy Premium</title>
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <span class="loader-emoji">🍌</span>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p>Menyiapkan Pisang Crispy Terlezat...</p>
+        </div>
+    </div>
+
+    <!-- Sticky Header / Navbar -->
+    <header id="main-header" class="header">
+        <div class="container nav-container">
+            <!-- Brand Logo -->
+            <a href="#home" class="logo-container" id="logo-link">
+                <div class="logo-circle">🍌</div>
+                <div class="logo-text">
+                    <span class="brand-name">Cruncy</span>
+                    <span class="brand-sub">& Topping</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link" id="nav-link-menu">Menu</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link cart-trigger" id="nav-link-cart">
+                            <i class="fa-solid fa-shopping-cart"></i> Keranjang
+                            <span class="cart-badge" id="cart-badge">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <!-- Hero Left: Text & CTA -->
+                <div class="hero-content reveal-slide-up">
+                    <span class="hero-tag">🍌 Cemilan Premium Terbaik</span>
+                    <h1 class="hero-title">Cruncy & Topping</h1>
+                    <h2 class="hero-subtitle">Pisang Crispy dengan Berbagai Topping Favorit</h2>
+                    <p class="hero-description">
+                        Nikmati kelezatan pisang pilihan yang digoreng hingga garing kecokelatan, dipadukan dengan limpahan saus coklat lumer, keju melimpah, dan sensasi topping modern yang memanjakan lidah Anda di setiap gigitan.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary btn-ripple" id="btn-hero-menu">
+                            <i class="fa-solid fa-utensils"></i> Lihat Menu
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-ripple cart-trigger" id="btn-hero-order">
+                            <i class="fa-solid fa-cart-shopping"></i> Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Illustration / Photo -->
+                <div class="hero-image-wrapper reveal-fade">
+                    <div class="hero-image-bg-glow"></div>
+                    <img src="images/hero.png" alt="Cruncy and Topping Crispy Banana Combo" class="hero-img floating-element">
+                </div>
+            </div>
+            <!-- Wave separator for modern curve -->
+            <div class="hero-wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="why-us-section">
+            <div class="container">
+                <div class="section-header reveal-slide-up">
+                    <span class="section-tag">Keunggulan</span>
+                    <h2 class="section-title">Kenapa Memilih Kami?</h2>
+                    <p class="section-subtitle">Kami berkomitmen memberikan kualitas cemilan terbaik untuk menemani waktu santai Anda.</p>
+                </div>
+
+                <div class="why-us-grid">
+                    <!-- Card 1 -->
+                    <div class="why-card reveal-slide-up" style="--card-index: 1;">
+                        <div class="why-icon-wrapper">
+                            <i class="fa-solid fa-clock-rotate-left"></i>
+                        </div>
+                        <h3 class="why-title">Fresh Setiap Hari</h3>
+                        <p class="why-desc">Pisang digoreng dadakan saat pesanan masuk, menjamin kerenyahan yang maksimal dan kehangatan rasa di setiap gigitan.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="why-card reveal-slide-up" style="--card-index: 2;">
+                        <div class="why-icon-wrapper">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <h3 class="why-title">Bahan Berkualitas</h3>
+                        <p class="why-desc">Menggunakan pisang pilihan yang manis alami serta topping premium berlisensi BPOM yang aman dan super lezat.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="why-card reveal-slide-up" style="--card-index: 3;">
+                        <div class="why-icon-wrapper">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <h3 class="why-title">Harga Terjangkau</h3>
+                        <p class="why-desc">Kenikmatan cemilan sekelas kafe bintang lima kini bisa Anda nikmati dengan harga kaki lima yang bersahabat di kantong.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <div class="section-header reveal-slide-up">
+                    <span class="section-tag">Menu Terfavorit</span>
+                    <h2 class="section-title">Pilihan Menu Pisang Crispy</h2>
+                    <p class="section-subtitle">Pilih varian topping favorit Anda dan nikmati kelezatan tiada tara.</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1: Pisang Coklat -->
+                    <div class="product-card reveal-slide-up" style="--card-index: 1;">
+                        <div class="product-img-container">
+                            <img src="images/pisang-coklat.png" alt="Pisang Coklat Lumer" class="product-img">
+                            <span class="product-badge">Best Seller 🔥</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pisang Coklat</h3>
+                            <div class="product-price">Rp12.000</div>
+                            <p class="product-desc">Pisang crispy hangat dengan lumuran saus cokelat lumer premium yang super melimpah dan manis pas.</p>
+                            <button class="btn btn-primary btn-add-to-cart btn-ripple" data-id="1" data-name="Pisang Coklat" data-price="12000" data-img="images/pisang-coklat.png">
+                                <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Pisang Jagung Manis -->
+                    <div class="product-card reveal-slide-up" style="--card-index: 2;">
+                        <div class="product-img-container">
+                            <img src="images/pisang-jagung.png" alt="Pisang Jagung Manis" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pisang Jagung Manis</h3>
+                            <div class="product-price">Rp12.000</div>
+                            <p class="product-desc">Pisang crispy renyah dengan paduan topping jagung manis pipil segar dan parutan keju gurih di atasnya.</p>
+                            <button class="btn btn-primary btn-add-to-cart btn-ripple" data-id="2" data-name="Pisang Jagung Manis" data-price="12000" data-img="images/pisang-jagung.png">
+                                <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Pisang Balado -->
+                    <div class="product-card reveal-slide-up" style="--card-index: 3;">
+                        <div class="product-img-container">
+                            <img src="images/pisang-balado.png" alt="Pisang Balado Pedas Gurih" class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Pisang Balado</h3>
+                            <div class="product-price">Rp12.000</div>
+                            <p class="product-desc">Sensasi unik pisang crispy dengan taburan bumbu balado premium pedas manis gurih yang bikin ketagihan.</p>
+                            <button class="btn btn-primary btn-add-to-cart btn-ripple" data-id="3" data-name="Pisang Balado" data-price="12000" data-img="images/pisang-balado.png">
+                                <i class="fa-solid fa-cart-plus"></i> Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Shopping Cart Drawer (Overlay) -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-shopping-basket"></i> Keranjang Belanja</h3>
+            <button class="cart-close" id="cart-close-btn" aria-label="Close Cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        
+        <!-- Cart Items Area -->
+        <div class="cart-body" id="cart-items-container">
+            <!-- Dynamic Items will be rendered here via JS -->
+            <div class="cart-empty-message" id="cart-empty-message">
+                <span class="empty-emoji">🛒</span>
+                <p>Keranjang belanja Anda masih kosong.</p>
+                <a href="#menu" class="btn btn-primary btn-ripple" id="btn-back-to-menu">Lihat Menu</a>
+            </div>
+        </div>
+
+        <!-- Cart Footer / Total Area -->
+        <div class="cart-footer" id="cart-footer">
+            <div class="cart-total-row">
+                <span class="total-label">Total Harga:</span>
+                <span class="total-amount" id="cart-total-amount">Rp0</span>
+            </div>
+            
+            <!-- WhatsApp Checkout Trigger -->
+            <a href="#" class="btn btn-accent btn-checkout btn-ripple" id="btn-whatsapp-checkout">
+                <i class="fa-brands fa-whatsapp"></i> Checkout via WhatsApp
+            </a>
+            <p class="checkout-note">Pesanan Anda akan dikirim ke WhatsApp resmi Cruncy & Topping untuk proses pembayaran & pengiriman.</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top btn-ripple" id="scroll-top-btn" aria-label="Scroll to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Footer Info -->
+            <div class="footer-info">
+                <div class="logo-container footer-logo">
+                    <div class="logo-circle">🍌</div>
+                    <div class="logo-text">
+                        <span class="brand-name">Cruncy</span>
+                        <span class="brand-sub">& Topping</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    Pelopor cemilan pisang crispy premium dengan inovasi topping modern pertama di Indonesia. Kerenyahan tiada akhir dengan cita rasa istimewa.
+                </p>
+            </div>
+
+            <!-- Footer Contact -->
+            <div class="footer-links">
+                <h4 class="footer-title">Hubungi Kami</h4>
+                <ul class="contact-list">
+                    <li>
+                        <a href="https://instagram.com/cruncy_topping" target="_blank" rel="noopener" class="contact-link">
+                            <i class="fa-brands fa-instagram"></i> @cruncy_topping
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6285864824730" target="_blank" rel="noopener" class="contact-link">
+                            <i class="fa-solid fa-phone"></i> 085864824730
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Footer Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Cruncy & Topping. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
